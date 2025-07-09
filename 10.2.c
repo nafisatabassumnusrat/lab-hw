@@ -1,17 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, sum;
+    int arr[5], sum = 0, i;
 
-    // Read two numbers
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
+    printf("Enter 5 numbers:\n");
+    for(i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+        sum += arr[i]; // Add each to sum
+    }
 
-    // Calculate sum
-    sum = a + b;
-
-    // Display result
     printf("Sum = %d\n", sum);
 
     return 0;
 }
+// This program reads 5 integers from the user, calculates their sum, and prints the result.
